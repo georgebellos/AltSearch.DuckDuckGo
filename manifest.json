@@ -1,0 +1,11 @@
+{
+    "manifest_version": 2,
+    "name": "DuckDuckGo Alternate Search",
+    "version": "0.1",
+    "description": "Enables alternate search engines for DuckDuckGo searches",
+    "content_scripts" : [{
+        "matches" : ["https://duckduckgo.com/?q=*"],
+        "js" : ["ddg.js"],
+        "run_at": "document_end"
+    }]
+}
