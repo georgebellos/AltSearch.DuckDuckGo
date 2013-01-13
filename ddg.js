@@ -3,17 +3,17 @@
     // List of search engines used in the search
     var searchEngines = [
         // {"Name": "", "Url": ""}
-        {"Name": "Google", "Url": "https://www.google.ca/search?q="},
-        {"Name": "Bing", "Url": "http://www.bing.com/search?q="},
-        {"Name": "Yahoo!", "Url": "search.yahoo.com/search?p="},
-        {"Name": "Ask", "Url": "http://www.ask.com/web?q="},
-        {"Name": "Wikipedia", "Url": "https://en.wikipedia.org/wiki/"}
+        {"Name": "Google",    "Url": "https://www.google.ca/search?q="},
+        {"Name": "Bing",      "Url": "http://www.bing.com/search?q="},
+        {"Name": "Yahoo!",    "Url": "http://search.yahoo.com/search?p="},
+        {"Name": "Ask",       "Url": "http://www.ask.com/web?q="},
+        {"Name": "Wikipedia", "Url": "https://en.wikipedia.org/wiki/Special:Search/"}
     ];
 
     // get the query string parameter
-    function getQueryString(name) {
-        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-        var regexS = "[\\?&]" + name + "=([^&#]*)";
+    function getQueryString(param) {
+        param = param.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + param + "=([^&#]*)";
         var regex = new RegExp(regexS);
         var results = regex.exec(window.location.search);
         if (results == null){

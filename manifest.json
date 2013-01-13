@@ -3,7 +3,12 @@
     "name": "DuckDuckGo Alternate Search",
     "version": "0.1",
     "description": "Enables alternate search engines for DuckDuckGo searches",
-    "default_icon": "icon.jpg",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "64": "icon64.png",
+        "128": "icon128.png"
+    },
     "content_scripts" : [{
         "matches" : ["https://duckduckgo.com/?q=*"],
         "js" : ["ddg.js"],
