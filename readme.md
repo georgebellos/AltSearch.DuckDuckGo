@@ -8,4 +8,4 @@
 Find the official plugin in the [Google Chrome Extension Store][2]
 
  [1]: https://chrome.google.com/webstore/category/extensions
- [2]: https://chrome.google.com/webstore/detail/duckduckgo-alternate-sear/ohkobpkfmgnjndhehkeajclfpofcecnj
+ [2]: https://chrome.google.com/webstore/detail/duckduckgo-alternate-sear/pgncggjbcfdlllbgjadhchaobjnfocfd
