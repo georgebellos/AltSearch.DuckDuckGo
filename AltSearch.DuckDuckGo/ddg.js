@@ -7,7 +7,8 @@
         {"Name": "Bing",      "Url": "http://www.bing.com/search?q="},
         {"Name": "Yahoo!",    "Url": "http://search.yahoo.com/search?p="},
         {"Name": "Ask",       "Url": "http://www.ask.com/web?q="},
-        {"Name": "Wikipedia", "Url": "https://en.wikipedia.org/wiki/Special:Search/"}
+        {"Name": "Wikipedia", "Url": "https://en.wikipedia.org/wiki/Special:Search/"},
+        {"Name": "Wolfram",   "Url": "http://www.wolframalpha.com/input/?i="}
     ];
 
     // get the query string parameter
