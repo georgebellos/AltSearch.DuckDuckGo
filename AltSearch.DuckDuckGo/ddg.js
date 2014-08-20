@@ -25,18 +25,24 @@
     // generate the search link
     function generateSearchLink(searchEngineName, searchEngineUrl) {
         var divTag = document.createElement("div");
-        divTag.className = "info";
-        divTag.innerHTML = "<a href='" + searchEngineUrl + getQueryString("q") + "'>search on " + searchEngineName + "</a>";
-        document.getElementsByClassName("region-indicator-wrap")[0].appendChild(divTag); // inject it into the container.
+        divTag.className = "t-left";
+        divTag.style.padding = "12px";
+        divTag.style.fontSize = "13px";
+        divTag.innerHTML = "<a href='" + searchEngineUrl + getQueryString("q") + "'> " + searchEngineName + "</a>";
+        document.getElementsByClassName("results--sidebar")[0].appendChild(divTag); // inject it into the container.
     }
 
     (function(){
 
         // First we create the header
         var divTag = document.createElement("div");
-        divTag.className = "region-indicator info__label"; // class predefined in the DDG styles
-        divTag.innerHTML = "Alternate Searches:";
-        document.getElementsByClassName("region-indicator-wrap")[0].appendChild(divTag); // inject it into the container
+        divTag.className = "region-indicator t-left"; // class predefined in the DDG styles
+        divTag.style.color = "#888";
+        divTag.style.paddingLeft = "12px";
+        divTag.style.fontSize = "13px";
+        divTag.style.marginBottom = "10px";
+        divTag.innerHTML = "Search with: ";
+        document.getElementsByClassName("results--sidebar")[0].appendChild(divTag); // inject it into the container
 
         // Then we loop through all the search engines and inject their links into DuckDuckGo.
         for(var i in searchEngines){
